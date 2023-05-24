@@ -1,0 +1,501 @@
+2023-05-24 02:26:27,352: Logging to /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_022626/output.log initialized.
+2023-05-24 02:26:27,353: ### Folder structure created at /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_022626
+2023-05-24 02:26:27,354: ### Run configurations for test_run
+2023-05-24 02:26:27,355: experiment_name: test_run
+2023-05-24 02:26:27,356: train_basin_file: 1_basin.txt
+2023-05-24 02:26:27,357: validation_basin_file: 1_basin.txt
+2023-05-24 02:26:27,358: test_basin_file: 1_basin.txt
+2023-05-24 02:26:27,359: train_start_date: 1999-10-01 00:00:00
+2023-05-24 02:26:27,360: train_end_date: 2008-09-30 00:00:00
+2023-05-24 02:26:27,360: validation_start_date: 1980-10-01 00:00:00
+2023-05-24 02:26:27,361: validation_end_date: 1989-09-30 00:00:00
+2023-05-24 02:26:27,362: test_start_date: 1989-10-01 00:00:00
+2023-05-24 02:26:27,363: test_end_date: 1999-09-30 00:00:00
+2023-05-24 02:26:27,364: device: cuda:0
+2023-05-24 02:26:27,365: validate_every: 3
+2023-05-24 02:26:27,366: validate_n_random_basins: 1
+2023-05-24 02:26:27,366: metrics: ['NSE']
+2023-05-24 02:26:27,367: model: cudalstm
+2023-05-24 02:26:27,368: head: regression
+2023-05-24 02:26:27,369: output_activation: linear
+2023-05-24 02:26:27,370: hidden_size: 20
+2023-05-24 02:26:27,370: initial_forget_bias: 3
+2023-05-24 02:26:27,371: output_dropout: 0.4
+2023-05-24 02:26:27,372: optimizer: Adam
+2023-05-24 02:26:27,374: loss: MSE
+2023-05-24 02:26:27,376: learning_rate: {0: 0.01, 30: 0.005, 40: 0.001}
+2023-05-24 02:26:27,377: batch_size: 256
+2023-05-24 02:26:27,377: epochs: 50
+2023-05-24 02:26:27,378: clip_gradient_norm: 1
+2023-05-24 02:26:27,379: predict_last_n: 1
+2023-05-24 02:26:27,380: seq_length: 365
+2023-05-24 02:26:27,381: num_workers: 8
+2023-05-24 02:26:27,382: log_interval: 5
+2023-05-24 02:26:27,383: log_tensorboard: True
+2023-05-24 02:26:27,384: log_n_figures: 1
+2023-05-24 02:26:27,385: save_weights_every: 1
+2023-05-24 02:26:27,386: dataset: camels_us
+2023-05-24 02:26:27,387: data_dir: ../../data/CAMELS_US
+2023-05-24 02:26:27,388: forcings: ['maurer', 'daymet', 'nldas']
+2023-05-24 02:26:27,389: dynamic_inputs: ['PRCP(mm/day)_nldas', 'PRCP(mm/day)_maurer', 'prcp(mm/day)_daymet', 'srad(W/m2)_daymet', 'tmax(C)_daymet', 'tmin(C)_daymet', 'vp(Pa)_daymet']
+2023-05-24 02:26:27,390: target_variables: ['QObs(mm/d)']
+2023-05-24 02:26:27,391: clip_targets_to_zero: ['QObs(mm/d)']
+2023-05-24 02:26:27,394: number_of_basins: 1
+2023-05-24 02:26:27,395: run_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_022626
+2023-05-24 02:26:27,396: train_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_022626/train_data
+2023-05-24 02:26:27,396: img_log_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_022626/img_log
+2023-05-24 02:26:27,410: ### Device cuda:0 will be used for training
+2023-05-24 02:26:27,419: Loading basin data into xarray data set.
+2023-05-24 02:26:27,612: Received command c on object id p0
+2023-05-24 02:26:28,607: Received command c on object id p0
+2023-05-24 02:26:29,607: Received command c on object id p0
+2023-05-24 02:26:30,607: Received command c on object id p0
+2023-05-24 02:26:31,607: Received command c on object id p0
+2023-05-24 02:26:32,607: Received command c on object id p0
+2023-05-24 02:26:33,607: Received command c on object id p0
+2023-05-24 02:26:34,607: Received command c on object id p0
+2023-05-24 02:26:35,607: Received command c on object id p0
+2023-05-24 02:26:36,607: Received command c on object id p0
+2023-05-24 02:26:37,607: Received command c on object id p0
+2023-05-24 02:26:38,607: Received command c on object id p0
+2023-05-24 02:26:39,607: Received command c on object id p0
+2023-05-24 02:26:40,607: Received command c on object id p0
+2023-05-24 02:26:41,607: Received command c on object id p0
+2023-05-24 02:26:42,607: Received command c on object id p0
+2023-05-24 02:26:43,607: Received command c on object id p0
+2023-05-24 02:26:44,607: Received command c on object id p0
+2023-05-24 02:26:45,607: Received command c on object id p0
+2023-05-24 02:26:46,607: Received command c on object id p0
+2023-05-24 02:26:47,607: Received command c on object id p0
+2023-05-24 02:26:48,607: Received command c on object id p0
+2023-05-24 02:26:49,607: Received command c on object id p0
+2023-05-24 02:26:50,607: Received command c on object id p0
+2023-05-24 02:26:51,607: Received command c on object id p0
+2023-05-24 02:26:52,607: Received command c on object id p0
+2023-05-24 02:26:53,607: Received command c on object id p0
+2023-05-24 02:26:54,607: Received command c on object id p0
+2023-05-24 02:26:55,607: Received command c on object id p0
+2023-05-24 02:26:56,607: Received command c on object id p0
+2023-05-24 02:26:57,607: Received command c on object id p0
+2023-05-24 02:26:58,607: Received command c on object id p0
+2023-05-24 02:26:59,607: Received command c on object id p0
+2023-05-24 02:27:00,607: Received command c on object id p0
+2023-05-24 02:27:01,607: Received command c on object id p0
+2023-05-24 02:27:02,607: Received command c on object id p0
+2023-05-24 02:27:03,608: Received command c on object id p0
+2023-05-24 02:27:04,607: Received command c on object id p0
+2023-05-24 02:27:05,607: Received command c on object id p0
+2023-05-24 02:27:06,607: Received command c on object id p0
+2023-05-24 02:27:07,607: Received command c on object id p0
+2023-05-24 02:27:08,607: Received command c on object id p0
+2023-05-24 02:27:09,607: Received command c on object id p0
+2023-05-24 02:27:10,607: Received command c on object id p0
+2023-05-24 02:27:11,607: Received command c on object id p0
+2023-05-24 02:27:12,607: Received command c on object id p0
+2023-05-24 02:27:13,607: Received command c on object id p0
+2023-05-24 02:27:14,607: Received command c on object id p0
+2023-05-24 02:27:15,607: Received command c on object id p0
+2023-05-24 02:27:16,607: Received command c on object id p0
+2023-05-24 02:27:17,607: Received command c on object id p0
+2023-05-24 02:27:18,607: Received command c on object id p0
+2023-05-24 02:27:19,607: Received command c on object id p0
+2023-05-24 02:27:20,607: Received command c on object id p0
+2023-05-24 02:27:21,607: Received command c on object id p0
+2023-05-24 02:27:22,607: Received command c on object id p0
+2023-05-24 02:27:23,607: Received command c on object id p0
+2023-05-24 02:27:24,607: Received command c on object id p0
+2023-05-24 02:27:25,607: Received command c on object id p0
+2023-05-24 02:27:26,607: Received command c on object id p0
+2023-05-24 02:27:27,607: Received command c on object id p0
+2023-05-24 02:27:28,607: Received command c on object id p0
+2023-05-24 02:27:29,607: Received command c on object id p0
+2023-05-24 02:27:30,607: Received command c on object id p0
+2023-05-24 02:27:31,607: Received command c on object id p0
+2023-05-24 02:27:32,607: Received command c on object id p0
+2023-05-24 02:27:33,607: Received command c on object id p0
+2023-05-24 02:27:34,607: Received command c on object id p0
+2023-05-24 02:27:35,607: Received command c on object id p0
+2023-05-24 02:27:36,607: Received command c on object id p0
+2023-05-24 02:27:37,607: Received command c on object id p0
+2023-05-24 02:27:38,607: Received command c on object id p0
+2023-05-24 02:27:39,607: Received command c on object id p0
+2023-05-24 02:27:40,607: Received command c on object id p0
+2023-05-24 02:27:41,607: Received command c on object id p0
+2023-05-24 02:27:42,607: Received command c on object id p0
+2023-05-24 02:27:43,607: Received command c on object id p0
+2023-05-24 02:27:44,607: Received command c on object id p0
+2023-05-24 02:27:45,607: Received command c on object id p0
+2023-05-24 02:27:46,607: Received command c on object id p0
+2023-05-24 02:27:47,607: Received command c on object id p0
+2023-05-24 02:27:48,607: Received command c on object id p0
+2023-05-24 02:27:49,607: Received command c on object id p0
+2023-05-24 02:27:50,607: Received command c on object id p0
+2023-05-24 02:27:51,607: Received command c on object id p0
+2023-05-24 02:27:52,607: Received command c on object id p0
+2023-05-24 02:27:53,610: Received command c on object id p0
+2023-05-24 02:27:54,607: Received command c on object id p0
+2023-05-24 02:27:55,607: Received command c on object id p0
+2023-05-24 02:27:56,607: Received command c on object id p0
+2023-05-24 02:27:57,607: Received command c on object id p0
+2023-05-24 02:27:58,607: Received command c on object id p0
+2023-05-24 02:27:59,607: Received command c on object id p0
+2023-05-24 02:28:00,607: Received command c on object id p0
+2023-05-24 02:28:01,607: Received command c on object id p0
+2023-05-24 02:28:02,607: Received command c on object id p0
+2023-05-24 02:28:03,607: Received command c on object id p0
+2023-05-24 02:28:04,607: Received command c on object id p0
+2023-05-24 02:28:05,607: Received command c on object id p0
+2023-05-24 02:28:06,607: Received command c on object id p0
+2023-05-24 02:28:07,607: Received command c on object id p0
+2023-05-24 02:28:08,607: Received command c on object id p0
+2023-05-24 02:28:09,607: Received command c on object id p0
+2023-05-24 02:28:10,607: Received command c on object id p0
+2023-05-24 02:28:11,607: Received command c on object id p0
+2023-05-24 02:28:12,607: Received command c on object id p0
+2023-05-24 02:28:13,607: Received command c on object id p0
+2023-05-24 02:28:14,607: Received command c on object id p0
+2023-05-24 02:28:15,607: Received command c on object id p0
+2023-05-24 02:28:16,607: Received command c on object id p0
+2023-05-24 02:28:17,607: Received command c on object id p0
+2023-05-24 02:28:18,607: Received command c on object id p0
+2023-05-24 02:28:19,607: Received command c on object id p0
+2023-05-24 02:28:20,607: Received command c on object id p0
+2023-05-24 02:28:21,607: Received command c on object id p0
+2023-05-24 02:28:22,607: Received command c on object id p0
+2023-05-24 02:28:23,607: Received command c on object id p0
+2023-05-24 02:28:24,607: Received command c on object id p0
+2023-05-24 02:28:25,607: Received command c on object id p0
+2023-05-24 02:28:26,607: Received command c on object id p0
+2023-05-24 02:28:27,607: Received command c on object id p0
+2023-05-24 02:28:28,607: Received command c on object id p0
+2023-05-24 02:28:29,607: Received command c on object id p0
+2023-05-24 02:28:30,607: Received command c on object id p0
+2023-05-24 02:28:31,607: Received command c on object id p0
+2023-05-24 02:28:32,607: Received command c on object id p0
+2023-05-24 02:28:33,607: Received command c on object id p0
+2023-05-24 02:28:34,607: Received command c on object id p0
+2023-05-24 02:28:35,607: Received command c on object id p0
+2023-05-24 02:28:36,607: Received command c on object id p0
+2023-05-24 02:28:37,607: Received command c on object id p0
+2023-05-24 02:28:38,607: Received command c on object id p0
+2023-05-24 02:28:39,607: Received command c on object id p0
+2023-05-24 02:28:40,607: Received command c on object id p0
+2023-05-24 02:28:41,607: Received command c on object id p0
+2023-05-24 02:28:42,607: Received command c on object id p0
+2023-05-24 02:28:43,607: Received command c on object id p0
+2023-05-24 02:28:44,607: Received command c on object id p0
+2023-05-24 02:28:45,607: Received command c on object id p0
+2023-05-24 02:28:46,607: Received command c on object id p0
+2023-05-24 02:28:47,607: Received command c on object id p0
+2023-05-24 02:28:48,607: Received command c on object id p0
+2023-05-24 02:28:49,607: Received command c on object id p0
+2023-05-24 02:28:50,607: Received command c on object id p0
+2023-05-24 02:28:51,607: Received command c on object id p0
+2023-05-24 02:28:52,607: Received command c on object id p0
+2023-05-24 02:28:53,607: Received command c on object id p0
+2023-05-24 02:28:54,607: Received command c on object id p0
+2023-05-24 02:28:55,607: Received command c on object id p0
+2023-05-24 02:28:56,607: Received command c on object id p0
+2023-05-24 02:28:57,607: Received command c on object id p0
+2023-05-24 02:28:58,607: Received command c on object id p0
+2023-05-24 02:28:59,607: Received command c on object id p0
+2023-05-24 02:29:00,607: Received command c on object id p0
+2023-05-24 02:29:01,607: Received command c on object id p0
+2023-05-24 02:29:02,607: Received command c on object id p0
+2023-05-24 02:29:03,607: Received command c on object id p0
+2023-05-24 02:29:04,607: Received command c on object id p0
+2023-05-24 02:29:05,607: Received command c on object id p0
+2023-05-24 02:29:06,607: Received command c on object id p0
+2023-05-24 02:29:07,607: Received command c on object id p0
+2023-05-24 02:29:08,607: Received command c on object id p0
+2023-05-24 02:29:09,607: Received command c on object id p0
+2023-05-24 02:29:10,607: Received command c on object id p0
+2023-05-24 02:29:11,607: Received command c on object id p0
+2023-05-24 02:29:12,607: Received command c on object id p0
+2023-05-24 02:29:13,607: Received command c on object id p0
+2023-05-24 02:29:14,607: Received command c on object id p0
+2023-05-24 02:29:15,607: Received command c on object id p0
+2023-05-24 02:29:16,608: Received command c on object id p0
+2023-05-24 02:29:17,607: Received command c on object id p0
+2023-05-24 02:29:18,607: Received command c on object id p0
+2023-05-24 02:29:19,607: Received command c on object id p0
+2023-05-24 02:29:20,607: Received command c on object id p0
+2023-05-24 02:29:21,607: Received command c on object id p0
+2023-05-24 02:29:22,607: Received command c on object id p0
+2023-05-24 02:29:23,607: Received command c on object id p0
+2023-05-24 02:29:24,607: Received command c on object id p0
+2023-05-24 02:29:25,607: Received command c on object id p0
+2023-05-24 02:29:26,607: Received command c on object id p0
+2023-05-24 02:29:27,607: Received command c on object id p0
+2023-05-24 02:29:28,607: Received command c on object id p0
+2023-05-24 02:29:29,607: Received command c on object id p0
+2023-05-24 02:29:30,607: Received command c on object id p0
+2023-05-24 02:29:31,607: Received command c on object id p0
+2023-05-24 02:29:32,607: Received command c on object id p0
+2023-05-24 02:29:33,607: Received command c on object id p0
+2023-05-24 02:29:34,607: Received command c on object id p0
+2023-05-24 02:29:35,607: Received command c on object id p0
+2023-05-24 02:29:36,607: Received command c on object id p0
+2023-05-24 02:29:37,607: Received command c on object id p0
+2023-05-24 02:29:38,607: Received command c on object id p0
+2023-05-24 02:29:39,607: Received command c on object id p0
+2023-05-24 02:29:40,607: Received command c on object id p0
+2023-05-24 02:29:41,607: Received command c on object id p0
+2023-05-24 02:29:42,607: Received command c on object id p0
+2023-05-24 02:29:43,607: Received command c on object id p0
+2023-05-24 02:29:44,607: Received command c on object id p0
+2023-05-24 02:29:45,607: Received command c on object id p0
+2023-05-24 02:29:46,607: Received command c on object id p0
+2023-05-24 02:29:47,607: Received command c on object id p0
+2023-05-24 02:29:48,607: Received command c on object id p0
+2023-05-24 02:29:49,607: Received command c on object id p0
+2023-05-24 02:29:50,607: Received command c on object id p0
+2023-05-24 02:29:51,607: Received command c on object id p0
+2023-05-24 02:29:52,608: Received command c on object id p0
+2023-05-24 02:29:53,607: Received command c on object id p0
+2023-05-24 02:29:54,607: Received command c on object id p0
+2023-05-24 02:29:55,607: Received command c on object id p0
+2023-05-24 02:29:56,607: Received command c on object id p0
+2023-05-24 02:29:57,607: Received command c on object id p0
+2023-05-24 02:29:58,607: Received command c on object id p0
+2023-05-24 02:29:59,607: Received command c on object id p0
+2023-05-24 02:30:00,607: Received command c on object id p0
+2023-05-24 02:30:01,607: Received command c on object id p0
+2023-05-24 02:30:02,607: Received command c on object id p0
+2023-05-24 02:30:03,607: Received command c on object id p0
+2023-05-24 02:30:04,607: Received command c on object id p0
+2023-05-24 02:30:05,607: Received command c on object id p0
+2023-05-24 02:30:06,607: Received command c on object id p0
+2023-05-24 02:30:07,607: Received command c on object id p0
+2023-05-24 02:30:08,607: Received command c on object id p0
+2023-05-24 02:30:09,607: Received command c on object id p0
+2023-05-24 02:30:10,607: Received command c on object id p0
+2023-05-24 02:30:11,607: Received command c on object id p0
+2023-05-24 02:30:12,607: Received command c on object id p0
+2023-05-24 02:30:13,607: Received command c on object id p0
+2023-05-24 02:30:14,607: Received command c on object id p0
+2023-05-24 02:30:15,607: Received command c on object id p0
+2023-05-24 02:30:16,607: Received command c on object id p0
+2023-05-24 02:30:17,607: Received command c on object id p0
+2023-05-24 02:30:18,607: Received command c on object id p0
+2023-05-24 02:30:19,607: Received command c on object id p0
+2023-05-24 02:30:20,607: Received command c on object id p0
+2023-05-24 02:30:21,607: Received command c on object id p0
+2023-05-24 02:30:22,607: Received command c on object id p0
+2023-05-24 02:30:23,607: Received command c on object id p0
+2023-05-24 02:30:24,607: Received command c on object id p0
+2023-05-24 02:30:25,607: Received command c on object id p0
+2023-05-24 02:30:26,607: Received command c on object id p0
+2023-05-24 02:30:27,607: Received command c on object id p0
+2023-05-24 02:30:28,607: Received command c on object id p0
+2023-05-24 02:30:29,607: Received command c on object id p0
+2023-05-24 02:30:30,607: Received command c on object id p0
+2023-05-24 02:30:31,607: Received command c on object id p0
+2023-05-24 02:30:32,607: Received command c on object id p0
+2023-05-24 02:30:33,607: Received command c on object id p0
+2023-05-24 02:30:34,607: Received command c on object id p0
+2023-05-24 02:30:35,607: Received command c on object id p0
+2023-05-24 02:30:35,982: Received command c on object id p1
+2023-05-24 02:30:36,607: Received command c on object id p0
+2023-05-24 02:30:36,679: Logging to /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023036/output.log initialized.
+2023-05-24 02:30:36,785: ### Folder structure created at /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023036
+2023-05-24 02:30:36,786: ### Run configurations for test_run
+2023-05-24 02:30:36,787: experiment_name: test_run
+2023-05-24 02:30:36,788: train_basin_file: 1_basin.txt
+2023-05-24 02:30:36,789: validation_basin_file: 1_basin.txt
+2023-05-24 02:30:36,790: test_basin_file: 1_basin.txt
+2023-05-24 02:30:36,790: train_start_date: 1999-10-01 00:00:00
+2023-05-24 02:30:36,791: train_end_date: 2008-09-30 00:00:00
+2023-05-24 02:30:36,792: validation_start_date: 1980-10-01 00:00:00
+2023-05-24 02:30:36,793: validation_end_date: 1989-09-30 00:00:00
+2023-05-24 02:30:36,794: test_start_date: 1989-10-01 00:00:00
+2023-05-24 02:30:36,795: test_end_date: 1999-09-30 00:00:00
+2023-05-24 02:30:36,796: device: cuda:0
+2023-05-24 02:30:36,796: validate_every: 3
+2023-05-24 02:30:36,797: validate_n_random_basins: 1
+2023-05-24 02:30:36,798: metrics: ['NSE']
+2023-05-24 02:30:36,799: model: cudalstm
+2023-05-24 02:30:36,800: head: regression
+2023-05-24 02:30:36,801: output_activation: linear
+2023-05-24 02:30:36,802: hidden_size: 20
+2023-05-24 02:30:36,803: initial_forget_bias: 3
+2023-05-24 02:30:36,804: output_dropout: 0.4
+2023-05-24 02:30:36,805: optimizer: Adam
+2023-05-24 02:30:36,806: loss: MSE
+2023-05-24 02:30:36,807: learning_rate: {0: 0.01, 30: 0.005, 40: 0.001}
+2023-05-24 02:30:36,808: batch_size: 256
+2023-05-24 02:30:36,808: epochs: 50
+2023-05-24 02:30:36,809: clip_gradient_norm: 1
+2023-05-24 02:30:36,810: predict_last_n: 1
+2023-05-24 02:30:36,811: seq_length: 365
+2023-05-24 02:30:36,812: num_workers: 8
+2023-05-24 02:30:36,813: log_interval: 5
+2023-05-24 02:30:36,814: log_tensorboard: True
+2023-05-24 02:30:36,815: log_n_figures: 1
+2023-05-24 02:30:36,816: save_weights_every: 1
+2023-05-24 02:30:36,816: dataset: camels_us
+2023-05-24 02:30:36,817: data_dir: /tmp/basin_timeseries_v1p2_metForcing_obsFlow
+2023-05-24 02:30:36,818: forcings: ['maurer', 'daymet', 'nldas']
+2023-05-24 02:30:36,819: dynamic_inputs: ['PRCP(mm/day)_nldas', 'PRCP(mm/day)_maurer', 'prcp(mm/day)_daymet', 'srad(W/m2)_daymet', 'tmax(C)_daymet', 'tmin(C)_daymet', 'vp(Pa)_daymet']
+2023-05-24 02:30:36,820: target_variables: ['QObs(mm/d)']
+2023-05-24 02:30:36,821: clip_targets_to_zero: ['QObs(mm/d)']
+2023-05-24 02:30:36,823: number_of_basins: 1
+2023-05-24 02:30:36,824: run_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023036
+2023-05-24 02:30:36,825: train_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023036/train_data
+2023-05-24 02:30:36,826: img_log_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023036/img_log
+2023-05-24 02:30:36,828: ### Device cuda:0 will be used for training
+2023-05-24 02:30:36,837: Loading basin data into xarray data set.
+2023-05-24 02:30:37,607: Received command c on object id p0
+2023-05-24 02:30:38,607: Received command c on object id p0
+2023-05-24 02:30:39,607: Received command c on object id p0
+2023-05-24 02:30:40,607: Received command c on object id p0
+2023-05-24 02:30:41,607: Received command c on object id p0
+2023-05-24 02:30:42,607: Received command c on object id p0
+2023-05-24 02:30:43,607: Received command c on object id p0
+2023-05-24 02:30:44,607: Received command c on object id p0
+2023-05-24 02:30:45,607: Received command c on object id p0
+2023-05-24 02:30:46,608: Received command c on object id p0
+2023-05-24 02:30:47,607: Received command c on object id p0
+2023-05-24 02:30:48,607: Received command c on object id p0
+2023-05-24 02:30:49,607: Received command c on object id p0
+2023-05-24 02:30:50,607: Received command c on object id p0
+2023-05-24 02:30:51,607: Received command c on object id p0
+2023-05-24 02:30:52,607: Received command c on object id p0
+2023-05-24 02:30:53,607: Received command c on object id p0
+2023-05-24 02:30:54,607: Received command c on object id p0
+2023-05-24 02:30:55,607: Received command c on object id p0
+2023-05-24 02:30:56,607: Received command c on object id p0
+2023-05-24 02:30:57,607: Received command c on object id p0
+2023-05-24 02:30:58,607: Received command c on object id p0
+2023-05-24 02:30:59,607: Received command c on object id p0
+2023-05-24 02:31:00,607: Received command c on object id p0
+2023-05-24 02:31:01,608: Received command c on object id p0
+2023-05-24 02:31:02,607: Received command c on object id p0
+2023-05-24 02:31:03,609: Received command c on object id p0
+2023-05-24 02:31:04,607: Received command c on object id p0
+2023-05-24 02:31:05,607: Received command c on object id p0
+2023-05-24 02:31:06,607: Received command c on object id p0
+2023-05-24 02:31:07,607: Received command c on object id p0
+2023-05-24 02:31:08,607: Received command c on object id p0
+2023-05-24 02:31:09,607: Received command c on object id p0
+2023-05-24 02:31:10,608: Received command c on object id p0
+2023-05-24 02:31:11,607: Received command c on object id p0
+2023-05-24 02:31:11,657: Received command c on object id p1
+2023-05-24 02:31:12,607: Received command c on object id p0
+2023-05-24 02:31:13,607: Received command c on object id p0
+2023-05-24 02:31:14,607: Received command c on object id p0
+2023-05-24 02:31:15,607: Received command c on object id p0
+2023-05-24 02:31:16,607: Received command c on object id p0
+2023-05-24 02:31:17,607: Received command c on object id p0
+2023-05-24 02:31:18,607: Received command c on object id p0
+2023-05-24 02:31:19,607: Received command c on object id p0
+2023-05-24 02:31:20,607: Received command c on object id p0
+2023-05-24 02:31:21,607: Received command c on object id p0
+2023-05-24 02:31:22,607: Received command c on object id p0
+2023-05-24 02:31:23,607: Received command c on object id p0
+2023-05-24 02:31:24,607: Received command c on object id p0
+2023-05-24 02:31:25,607: Received command c on object id p0
+2023-05-24 02:31:26,607: Received command c on object id p0
+2023-05-24 02:31:27,607: Received command c on object id p0
+2023-05-24 02:31:28,607: Received command c on object id p0
+2023-05-24 02:31:29,607: Received command c on object id p0
+2023-05-24 02:31:30,607: Received command c on object id p0
+2023-05-24 02:31:31,049: Received command c on object id p1
+2023-05-24 02:31:31,607: Received command c on object id p0
+2023-05-24 02:31:32,608: Received command c on object id p0
+2023-05-24 02:31:33,607: Received command c on object id p0
+2023-05-24 02:31:34,607: Received command c on object id p0
+2023-05-24 02:31:35,607: Received command c on object id p0
+2023-05-24 02:31:36,607: Received command c on object id p0
+2023-05-24 02:31:37,607: Received command c on object id p0
+2023-05-24 02:31:38,607: Received command c on object id p0
+2023-05-24 02:31:39,607: Received command c on object id p0
+2023-05-24 02:31:40,607: Received command c on object id p0
+2023-05-24 02:31:41,607: Received command c on object id p0
+2023-05-24 02:31:42,607: Received command c on object id p0
+2023-05-24 02:31:43,610: Received command c on object id p0
+2023-05-24 02:31:44,607: Received command c on object id p0
+2023-05-24 02:31:45,607: Received command c on object id p0
+2023-05-24 02:31:46,607: Received command c on object id p0
+2023-05-24 02:31:47,607: Received command c on object id p0
+2023-05-24 02:31:48,607: Received command c on object id p0
+2023-05-24 02:31:49,608: Received command c on object id p0
+2023-05-24 02:31:50,607: Received command c on object id p0
+2023-05-24 02:31:51,607: Received command c on object id p0
+2023-05-24 02:31:52,607: Received command c on object id p0
+2023-05-24 02:31:53,607: Received command c on object id p0
+2023-05-24 02:31:54,607: Received command c on object id p0
+2023-05-24 02:31:55,607: Received command c on object id p0
+2023-05-24 02:31:56,607: Received command c on object id p0
+2023-05-24 02:31:57,607: Received command c on object id p0
+2023-05-24 02:31:58,607: Received command c on object id p0
+2023-05-24 02:31:59,607: Received command c on object id p0
+2023-05-24 02:32:00,607: Received command c on object id p0
+2023-05-24 02:32:01,607: Received command c on object id p0
+2023-05-24 02:32:02,607: Received command c on object id p0
+2023-05-24 02:32:03,607: Received command c on object id p0
+2023-05-24 02:32:04,123: Received command c on object id p1
+2023-05-24 02:32:04,607: Received command c on object id p0
+2023-05-24 02:32:04,770: Logging to /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023204/output.log initialized.
+2023-05-24 02:32:04,859: ### Folder structure created at /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023204
+2023-05-24 02:32:04,860: ### Run configurations for test_run
+2023-05-24 02:32:04,861: experiment_name: test_run
+2023-05-24 02:32:04,862: train_basin_file: 1_basin.txt
+2023-05-24 02:32:04,862: validation_basin_file: 1_basin.txt
+2023-05-24 02:32:04,863: test_basin_file: 1_basin.txt
+2023-05-24 02:32:04,864: train_start_date: 1999-10-01 00:00:00
+2023-05-24 02:32:04,865: train_end_date: 2008-09-30 00:00:00
+2023-05-24 02:32:04,866: validation_start_date: 1980-10-01 00:00:00
+2023-05-24 02:32:04,867: validation_end_date: 1989-09-30 00:00:00
+2023-05-24 02:32:04,868: test_start_date: 1989-10-01 00:00:00
+2023-05-24 02:32:04,869: test_end_date: 1999-09-30 00:00:00
+2023-05-24 02:32:04,870: device: cuda:0
+2023-05-24 02:32:04,870: validate_every: 3
+2023-05-24 02:32:04,871: validate_n_random_basins: 1
+2023-05-24 02:32:04,872: metrics: ['NSE']
+2023-05-24 02:32:04,873: model: cudalstm
+2023-05-24 02:32:04,874: head: regression
+2023-05-24 02:32:04,875: output_activation: linear
+2023-05-24 02:32:04,875: hidden_size: 20
+2023-05-24 02:32:04,876: initial_forget_bias: 3
+2023-05-24 02:32:04,877: output_dropout: 0.4
+2023-05-24 02:32:04,878: optimizer: Adam
+2023-05-24 02:32:04,879: loss: MSE
+2023-05-24 02:32:04,880: learning_rate: {0: 0.01, 30: 0.005, 40: 0.001}
+2023-05-24 02:32:04,881: batch_size: 256
+2023-05-24 02:32:04,881: epochs: 50
+2023-05-24 02:32:04,882: clip_gradient_norm: 1
+2023-05-24 02:32:04,883: predict_last_n: 1
+2023-05-24 02:32:04,884: seq_length: 365
+2023-05-24 02:32:04,885: num_workers: 8
+2023-05-24 02:32:04,886: log_interval: 5
+2023-05-24 02:32:04,887: log_tensorboard: True
+2023-05-24 02:32:04,888: log_n_figures: 1
+2023-05-24 02:32:04,889: save_weights_every: 1
+2023-05-24 02:32:04,890: dataset: camels_us
+2023-05-24 02:32:04,891: data_dir: /tmp/basin_timeseries_v1p2_metForcing_obsFlow/basin_dataset_public_v1p2
+2023-05-24 02:32:04,892: forcings: ['maurer', 'daymet', 'nldas']
+2023-05-24 02:32:04,892: dynamic_inputs: ['PRCP(mm/day)_nldas', 'PRCP(mm/day)_maurer', 'prcp(mm/day)_daymet', 'srad(W/m2)_daymet', 'tmax(C)_daymet', 'tmin(C)_daymet', 'vp(Pa)_daymet']
+2023-05-24 02:32:04,893: target_variables: ['QObs(mm/d)']
+2023-05-24 02:32:04,894: clip_targets_to_zero: ['QObs(mm/d)']
+2023-05-24 02:32:04,895: number_of_basins: 1
+2023-05-24 02:32:04,895: run_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023204
+2023-05-24 02:32:04,896: train_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023204/train_data
+2023-05-24 02:32:04,897: img_log_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023204/img_log
+2023-05-24 02:32:04,899: ### Device cuda:0 will be used for training
+2023-05-24 02:32:04,907: Loading basin data into xarray data set.
+2023-05-24 02:32:05,134: Create lookup table and convert to pytorch tensor
+2023-05-24 02:32:05,607: Received command c on object id p0
+2023-05-24 02:32:06,612: Received command c on object id p0
+2023-05-24 02:32:07,608: Received command c on object id p0
+2023-05-24 02:32:08,607: Received command c on object id p0
+2023-05-24 02:32:09,607: Received command c on object id p0
+2023-05-24 02:32:10,660: Received command c on object id p0
+2023-05-24 02:32:11,614: Received command c on object id p0
+2023-05-24 02:32:12,607: Received command c on object id p0
+2023-05-24 02:32:13,608: Received command c on object id p0
+2023-05-24 02:32:14,607: Received command c on object id p0
+2023-05-24 02:32:15,607: Received command c on object id p0
+2023-05-24 02:32:16,607: Received command c on object id p0
+2023-05-24 02:32:16,843: Closing down clientserver connection
+2023-05-24 02:32:16,865: Closing down clientserver connection

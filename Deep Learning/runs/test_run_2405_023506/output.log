@@ -1,0 +1,50 @@
+2023-05-24 02:35:06,960: Logging to /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023506/output.log initialized.
+2023-05-24 02:35:06,962: ### Folder structure created at /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023506
+2023-05-24 02:35:06,963: ### Run configurations for test_run
+2023-05-24 02:35:06,963: experiment_name: test_run
+2023-05-24 02:35:06,964: train_basin_file: 1_basin.txt
+2023-05-24 02:35:06,965: validation_basin_file: 1_basin.txt
+2023-05-24 02:35:06,966: test_basin_file: 1_basin.txt
+2023-05-24 02:35:06,967: train_start_date: 1999-10-01 00:00:00
+2023-05-24 02:35:06,968: train_end_date: 2008-09-30 00:00:00
+2023-05-24 02:35:06,969: validation_start_date: 1980-10-01 00:00:00
+2023-05-24 02:35:06,969: validation_end_date: 1989-09-30 00:00:00
+2023-05-24 02:35:06,970: test_start_date: 1989-10-01 00:00:00
+2023-05-24 02:35:06,971: test_end_date: 1999-09-30 00:00:00
+2023-05-24 02:35:06,972: device: cuda:0
+2023-05-24 02:35:06,973: validate_every: 3
+2023-05-24 02:35:06,974: validate_n_random_basins: 1
+2023-05-24 02:35:06,974: metrics: ['NSE']
+2023-05-24 02:35:06,975: model: cudalstm
+2023-05-24 02:35:06,976: head: regression
+2023-05-24 02:35:06,977: output_activation: linear
+2023-05-24 02:35:06,978: hidden_size: 20
+2023-05-24 02:35:06,979: initial_forget_bias: 3
+2023-05-24 02:35:06,980: output_dropout: 0.4
+2023-05-24 02:35:06,980: optimizer: Adam
+2023-05-24 02:35:06,981: loss: MSE
+2023-05-24 02:35:06,982: learning_rate: {0: 0.01, 30: 0.005, 40: 0.001}
+2023-05-24 02:35:06,983: batch_size: 256
+2023-05-24 02:35:06,984: epochs: 50
+2023-05-24 02:35:06,984: clip_gradient_norm: 1
+2023-05-24 02:35:06,985: predict_last_n: 1
+2023-05-24 02:35:06,986: seq_length: 365
+2023-05-24 02:35:06,987: num_workers: 4
+2023-05-24 02:35:06,988: log_interval: 5
+2023-05-24 02:35:06,988: log_tensorboard: True
+2023-05-24 02:35:06,989: log_n_figures: 1
+2023-05-24 02:35:06,990: save_weights_every: 1
+2023-05-24 02:35:06,991: dataset: camels_us
+2023-05-24 02:35:06,992: data_dir: /tmp/basin_timeseries_v1p2_metForcing_obsFlow/basin_dataset_public_v1p2
+2023-05-24 02:35:06,993: forcings: ['maurer', 'daymet', 'nldas']
+2023-05-24 02:35:06,994: dynamic_inputs: ['PRCP(mm/day)_nldas', 'PRCP(mm/day)_maurer', 'prcp(mm/day)_daymet', 'srad(W/m2)_daymet', 'tmax(C)_daymet', 'tmin(C)_daymet', 'vp(Pa)_daymet']
+2023-05-24 02:35:06,995: target_variables: ['QObs(mm/d)']
+2023-05-24 02:35:06,996: clip_targets_to_zero: ['QObs(mm/d)']
+2023-05-24 02:35:06,996: number_of_basins: 1
+2023-05-24 02:35:06,997: run_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023506
+2023-05-24 02:35:06,998: train_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023506/train_data
+2023-05-24 02:35:06,999: img_log_dir: /Workspace/Repos/mdba/river-modelling-demo/Deep Learning/runs/test_run_2405_023506/img_log
+2023-05-24 02:35:07,013: ### Device cuda:0 will be used for training
+2023-05-24 02:35:07,020: Loading basin data into xarray data set.
+2023-05-24 02:35:07,194: Create lookup table and convert to pytorch tensor
+2023-05-24 02:35:13,996: Closing down clientserver connection
